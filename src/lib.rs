@@ -1,8 +1,12 @@
+pub(crate) struct ColorOption(String, String);
 
-#[warn(dead_code)]
-struct ColorOption(String, String);
 
-impl ColorOption {
+trait Color {
+    fn get_rgb(&mut self, r: i32, g: i32, b: i32);
+    fn get_hex(&mut self, r: i32, g: i32, b: i32);
+}
+
+impl Color for ColorOption {
 
     fn get_rgb(&mut self, r:i32, g: i32, b: i32)  {
         self.0 = format!("{} {} {}", r, g, b);
@@ -26,7 +30,5 @@ fn color_lizzard(r: i32, g: i32, b: i32) {
 
         is_hooked = true;
     }
-
-
 
 }
