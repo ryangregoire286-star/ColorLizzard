@@ -11,10 +11,22 @@ impl ColorOption {
     fn get_hex(&mut self, r:i32, g: i32, b: i32) {
         self.1 = format!("{:x} {:x} {:x}", r, g, b);
     }
-    cargo audit
 
 }
 
 fn color_lizzard(r: i32, g: i32, b: i32) {
-    let _ = format!("{:x} {:x} {:x}", r, g, b);
+
+    let mut is_hooked: bool = false;
+
+    while !is_hooked {
+
+        if is_hooked == false {
+            let _ = format!("{:x} {:x} {:x}", r, g, b);
+        }
+
+        is_hooked = true;
+    }
+
+
+
 }
