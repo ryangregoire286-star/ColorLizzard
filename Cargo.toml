@@ -1,6 +1,10 @@
 [package]
 name = "color_lizzard"
-version = "0.1.0"
+version = "0.1.3"
 edition = "2024"
+description = "Convert Hex to RGB Or RGB To Hex Color Code"
+
+license = "MIT"
+homepage = "https://github.com/ryangregoire286-star/ColorLizzard"
 
 [dependencies]
